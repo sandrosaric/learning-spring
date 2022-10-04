@@ -41,11 +41,11 @@ public class Reservation {
         this.roomId = roomId;
     }
 
-    public Long getGuestid() {
+    public Long getGuestId() {
         return guestid;
     }
 
-    public void setGuestid(Long guestid) {
+    public void setGuestId(Long guestid) {
         this.guestid = guestid;
     }
 

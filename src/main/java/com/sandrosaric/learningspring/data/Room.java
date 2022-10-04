@@ -9,7 +9,7 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="ROOM_ID")
-    private Long room_id;
+    private Long id;
 
     @Column(name="NAME")
     private String name;
@@ -20,12 +20,12 @@ public class Room {
     @Column(name="BED_INFO")
     private String bedInfo;
 
-    public Long getRoomId() {
-        return room_id;
+    public Long getId() {
+        return id;
     }
 
     public void setId(Long id) {
-        this.room_id = id;
+        this.id = id;
     }
 
     public String getName() {
@@ -55,7 +55,7 @@ public class Room {
     @Override
     public String toString() {
         return "Room{" +
-                "id=" + room_id +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", roomNumber='" + roomNumber + '\'' +
                 ", bedInfo='" + bedInfo + '\'' +
